@@ -13,7 +13,7 @@ do
   ../rsv_alignment_pipeline_RSVA.sh "${FQ1}" "${FQ2}" >& logfile.txt;
 
   # Modify the consensus.fasta file header to match the sample name, AND rename the output file by adding the sample name
-  echo ">${DIR} RSV-B" > "${DIR}"_pipeline_alignment.consensus.fa
+  echo ">${DIR} RSV-A" > "${DIR}"_pipeline_alignment.consensus.fa
   tail -n 1 pipeline_alignment.consensus.fa >> "${DIR}"_pipeline_alignment.consensus.fa
 
   # Calculate the coverage of the non-redundant inserts
